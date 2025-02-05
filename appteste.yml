@@ -8,7 +8,7 @@ metadata:
   tier: frontend
 
 spec:
-  container:
+  containers:
     - name: my-container-app
       image: httpd
 
