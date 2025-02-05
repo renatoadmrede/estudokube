@@ -4,8 +4,8 @@ kind: pod
 metadata:
   name: myapp-web1
   labels:
-  apps: myapp
-  tier: frontend
+   apps: myapp
+   tier: frontend
 
 spec:
   containers:
