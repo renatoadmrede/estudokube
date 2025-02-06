@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dep-front
+  labels:
+    apps: Front-01
+
+spec:
+  template:
+    metadata:
+      name: pod-01-nginx
+      labels:
+        env: testes
+  spec:
+    containers:
+     - name: nginx-01
+       image: nginx
+
+  selector:
+    matchLabels:
+      env: testes
+  replicas: 4
+    
