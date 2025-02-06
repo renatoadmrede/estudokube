@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: dep-front
   labels:
-    apps: Front-01
+    app: Front-01
 
 spec:
   template:
@@ -11,10 +11,10 @@ spec:
       name: pod-01-nginx
       labels:
         env: testes
-  spec:
-    containers:
-     - name: nginx-01
-       image: nginx
+    spec:
+      containers:
+       - name: nginx-01
+         image: nginx
 
   selector:
     matchLabels:
